@@ -1,0 +1,18 @@
+apiVersion: apps.trendyol.com/v1
+kind: TrendyolApplication
+metadata:
+  name: trendyol-demo
+spec:
+  namespace: default
+  image: nginx:1.21
+  pullSecret: ty-docker-registry
+  command:
+    - nginx
+  arguments:
+    - "-g"
+    - "daemon off;"
+  replicas: 2
+  environment:
+    ENV: production
+    VERSION: "1.0"
+

@@ -1,0 +1,51 @@
+# Go build & module files
+bin/
+vendor/
+*.exe
+*.log
+*.test
+*.out
+
+# Go module cache (optional)
+Gopkg.lock
+go.sum
+
+# Kubebuilder & controller-gen artefaktları
+_controller-gen
+_kubebuilder
+*.swp
+
+# Kubernetes manifest build
+config/crd/bases/
+config/rbac/
+*.yaml~  # geçici dosyalar
+
+# Vagrant artefaktları
+.vagrant/
+*.box
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE/editor
+.idea/
+.vscode/
+*.code-workspace
+
+# Archive / binary
+*.tar.gz
+*.zip
+*.gz
+
+# Env files and secrets
+.env
+.env.*
+
+# Debug
+*.log
+*.bak
+*.tmp
+
+# GitHub-specific
+.github/
