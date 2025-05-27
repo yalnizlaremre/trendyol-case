@@ -59,6 +59,9 @@ spec:
               image:
                 type: string
               namespace:
+                description: |-
+                  INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
+                  Important: Run "make" to regenerate code after modifying this file
                 type: string
               pullSecret:
                 type: string

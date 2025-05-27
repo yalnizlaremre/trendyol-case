@@ -1,0 +1,13 @@
+apiVersion: apps.trendyol.com/v1
+kind: TrendyolApplication
+metadata:
+  name: trendyol-invalid
+spec:
+  namespace: default
+  image: busybox
+  pullSecret: ""
+  command: ["/bin/sh"]
+  arguments: ["-c", "echo Hello"]
+  replicas: 0
+  environment:
+    FOO: bar

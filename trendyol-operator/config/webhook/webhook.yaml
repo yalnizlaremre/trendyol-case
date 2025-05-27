@@ -1,0 +1,15 @@
+webhooks:
+- name: mtrendyolapplications.apps.trendyol.com
+  clientConfig:
+    service:
+      name: webhook-service
+      namespace: system
+      path: /mutate-apps-trendyol-com-v1-trendyolapplication
+  rules:
+  - operations: ["CREATE", "UPDATE"]
+    apiGroups: ["apps.trendyol.com"]
+    apiVersions: ["v1"]
+    resources: ["trendyolapplications"]
+  admissionReviewVersions: ["v1"]
+  sideEffects: None
+  timeoutSeconds: 10

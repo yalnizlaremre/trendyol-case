@@ -27,7 +27,6 @@ import (
 type TrendyolApplicationSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
-
 	Namespace   string            `json:"namespace"`
 	Image       string            `json:"image"`
 	PullSecret  string            `json:"pullSecret"`

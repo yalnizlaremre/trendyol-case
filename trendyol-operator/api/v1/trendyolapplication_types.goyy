@@ -27,13 +27,14 @@ import (
 type TrendyolApplicationSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
-    Namespace   string            `json:"namespace"`
-    Image       string            `json:"image"`
-    PullSecret  string            `json:"pullSecret"`
-    Command     []string          `json:"command"`
-    Arguments   []string          `json:"arguments"`
-    Replicas    *int32            `json:"replicas"`
-    Environment map[string]string `json:"environment"`
+
+	Namespace   string            `json:"namespace"`
+	Image       string            `json:"image"`
+	PullSecret  string            `json:"pullSecret"`
+	Command     []string          `json:"command"`
+	Arguments   []string          `json:"arguments"`
+	Replicas    *int32            `json:"replicas"`
+	Environment map[string]string `json:"environment"`
 
 	// Foo is an example field of TrendyolApplication. Edit trendyolapplication_types.go to remove/update
 	Foo string `json:"foo,omitempty"`
@@ -44,11 +45,9 @@ type TrendyolApplicationStatus struct {
 	// INSERT ADDITIONAL STATUS FIELD - define observed state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
-    Phase      string `json:"phase,omitempty"`
-    DeployedAs string `json:"deployedAs,omitempty"`
-    Namespace  string `json:"namespace,omitempty"`
-
-
+	Phase      string `json:"phase,omitempty"`
+	DeployedAs string `json:"deployedAs,omitempty"`
+	Namespace  string `json:"namespace,omitempty"`
 }
 
 // +kubebuilder:object:root=true
